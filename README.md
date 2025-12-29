@@ -12,20 +12,24 @@ Key features:
 
 ## Project Structure
 weather-etl-pipeline/
-├─ dags/
-│ └─ weather_etl_dag.py # Airflow DAG
-├─ scripts/
-│ ├─ load_staging_data.py
-│ ├─ load_historical_data.py
-│ ├─ stage_quality_checks.py
-│ ├─ fact_quality_checks.py
-│ └─ write_audit_log.py
-├─ sql/
-│ └─ transform/
-│ ├─ load_date_dim_table.sql
-│ └─ load_fact_table.sql
-├─ requirements.txt
-└─ README.md
+├── dags/
+│ └── weather_etl_dag.py
+├── scripts/
+│ ├── load_staging_data.py
+│ ├── load_historical_data.py 
+│ ├── stage_quality_checks.py 
+│ ├── fact_quality_checks.py 
+│ └── write_audit_log.py 
+├── sql/
+│ └── transform/
+│ ├── load_date_dim_table.sql
+│ └── load_fact_table.sql 
+├── setup/
+│ └── create_tables.sql
+│ ├── load_cities.sql
+├── .env
+├── requirements.txt 
+└── README.md
 
 ---
 
