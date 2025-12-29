@@ -70,6 +70,7 @@ weather-etl-pipeline/
 ---
 
 ## Tables
+- dim_city: Dimension table for cities with unique city_id.
 - staging_weather: Staging table for raw weather data.
 - historical_weather: Historical table (appends new data only).
 - dim_datetime: Dimension table for dates.
