@@ -55,7 +55,8 @@ weather-etl-pipeline/
 
 3. **Run create_tables.sql in setup folder to create schema**
 
-4. **Run dags/scripts/load_cities.py to populate dim_city table**
+4. **Run dags/scripts/load_cities.py to populate staging_cities table**
+   - Run load_cities.sql in setup folder to populate dim_city table.
    - https://bulk.openweathermap.org/sample/ # Cities list comes from Openweather
    
 6. **Start Airflow and Postgres using Docker Compose**
@@ -70,6 +71,7 @@ weather-etl-pipeline/
 ---
 
 ## Tables
+- stage_cities: Staging table for raw cities data.
 - dim_city: Dimension table for cities with unique city_id.
 - staging_weather: Staging table for raw weather data.
 - historical_weather: Historical table (appends new data only).
