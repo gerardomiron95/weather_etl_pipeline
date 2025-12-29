@@ -87,7 +87,7 @@ weather-etl-pipeline/
 ---
 
 ## You can run the scripts locally outside of Airflow for testing
-python scripts/load_staging_data.py
-python scripts/load_historical_data.py
-python scripts/stage_quality_checks.py
-python scripts/fact_quality_checks.py
+- python scripts/load_staging_data.py
+- python scripts/load_historical_data.py
+- python scripts/stage_quality_checks.py
+- python scripts/fact_quality_checks.py
