@@ -11,6 +11,7 @@ Key features:
 ---
 
 ## Project Structure
+```
 weather-etl-pipeline/
 ├── dags/
 │ └── weather_etl_dag.py
@@ -30,6 +31,7 @@ weather-etl-pipeline/
 ├── .env
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
