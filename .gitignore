@@ -1,6 +1,13 @@
-dags/scripts/test_weather_api.py
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 .env
-venv
+venv/
+
 .DS_Store
+
+dags/scripts/test_weather_api.py
+
 docker-compose.yml
