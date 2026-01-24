@@ -47,12 +47,12 @@ weather-etl-pipeline/
 ## Setup
 
 1. **Clone the repository**  
-- git clone https://github.com/yourusername/weather-etl-pipeline.git
-- cd weather-etl-pipeline
+- ```git clone https://github.com/yourusername/weather-etl-pipeline.git```
+- ```cd weather-etl-pipeline```
 
 2. **Create a virtual environment and install libraries**
-- python3 -m venv .venv
-- pip install -r requirements.txt
+- ```python3 -m venv .venv```
+- ```pip install -r requirements.txt```
 
 3. **Create a .env file (or set Airflow Variables**)
    - API_KEY=<your_openweathermap_api_key>
