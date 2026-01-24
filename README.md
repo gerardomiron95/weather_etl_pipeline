@@ -60,11 +60,11 @@ weather-etl-pipeline/
 4. **Run create_tables.sql in setup folder to create schema**
 
 5. **Run dags/scripts/load_cities.py to populate staging_cities table**
-   - Run load_cities.sql in setup folder to populate dim_city table.
+   - Run ```load_cities.sql``` in setup folder to populate dim_city table.
    - https://bulk.openweathermap.org/sample/ # Cities list comes from Openweather
    
 6. **Start Airflow and Postgres using Docker Compose**
-   - docker-compose up -d
+   - ```docker-compose up -d```
      
 7. **Set Airflow connection**
    - Airflow should have a weather connection configured (host, port, username, password, database).
