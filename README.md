@@ -10,6 +10,15 @@ Key features:
 
 ---
 
+## Design Notes
+
+- The historical_weather table is append-only to preserve raw historical snapshots.
+- Staging tables isolate API ingestion from downstream transformations.
+- Fact and dimension tables support analytical querying and star-schema modeling.
+- Audit logging enables observability and run-level debugging.
+
+---
+
 ## Project Structure
 ```
 weather-etl-pipeline/
