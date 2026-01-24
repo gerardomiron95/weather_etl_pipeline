@@ -50,12 +50,16 @@ weather-etl-pipeline/
 - git clone https://github.com/yourusername/weather-etl-pipeline.git
 - cd weather-etl-pipeline
 
-2. **Create a .env file (or set Airflow Variables**
+2. **Create a virtual environment and install libraries**
+- python3 -m venv .venv
+- pip install -r requirements.txt
+
+3. **Create a .env file (or set Airflow Variables**)
    - API_KEY=<your_openweathermap_api_key>
 
-3. **Run create_tables.sql in setup folder to create schema**
+4. **Run create_tables.sql in setup folder to create schema**
 
-4. **Run dags/scripts/load_cities.py to populate staging_cities table**
+5. **Run dags/scripts/load_cities.py to populate staging_cities table**
    - Run load_cities.sql in setup folder to populate dim_city table.
    - https://bulk.openweathermap.org/sample/ # Cities list comes from Openweather
    
